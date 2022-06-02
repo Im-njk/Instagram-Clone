@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.feedFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:paddingLeft="2dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/title_font"
+            android:text="Instagram Clone"/>
+        <ImageView
+            android:id="@+id/main_add"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_add"
+            android:paddingVertical="10dp"
+            android:paddingLeft="20dp" />
+        <ImageView
+            android:id="@+id/main_chat"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_chats"
+            android:paddingVertical="10dp"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_R_story"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#50808080" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_R_feed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
